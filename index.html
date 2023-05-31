@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html><head>
+	
+<!--The following displays language used in browser to interpret page -->
+<meta charset="UTF-8">
+
+<!--The following line of code displays the page title on a browser tab -->
+<title>Horticulture Unit | Main Page</title>
+
+<!--link tags are for linking to external files, in this case your CSS stylesheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+<link href="normalize.css" rel="stylesheet" type="text/css">
+
+<!--the following tag tells the browser to adjust the site according to screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The following code links to the jquery library -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<!--The following code links to the javascript file that runs the slideshow -->	
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+
+<!--this is for the loader, loading, dreamer, dream  
+    <script type="text/javascript">
+        var loader = document.getElementById("loader");
+        
+        window.addEventListener("load",function(){
+            
+            loader.style.height="100px";
+            
+            loader.style.width="100px";
+            
+            loader.style.borderRadius= "50%";
+            
+            loader.style.visibility="hidden";
+            
+        })
+    </script>
+    -->	
+    
+<!--The following code links to the javascript file that runs the parallax image -->    
+<script src="js/parallax.min.js"></script>
+    
+<!--The following code links to Google Fonts-->
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway|Roboto&amp;display=swap" rel="stylesheet">
+
+	
+<!--The following javscript runs the jquery slideshow -->
+<script type="text/javascript">
+$('#slider').cycle({});
+</script>
+
+<!--The following javascript runs the nav bar which disappears on scroll-->
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+    
+<!--Favicon - images are in a folder called 'fav'-->
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/fav-192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/fav-31.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/fav-16.png">
+<link rel="manifest" href="img/fav/site.webmanifest">
+<link rel="mask-icon" href="img/fav/fav-512.png" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--End Favicon-->
+    
+<!--back to top button-->
+</head><body><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 782.188px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/mpx2.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -91px; height: 712px; width: 1068px; max-width: none; top: -749.75px;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 782px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/pxlay2.2.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -265px; height: 712px; width: 1415px; max-width: none; top: -631.6px;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 736px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/px2.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -91px; height: 712px; width: 1068px; max-width: none; top: -712.8px;"></div><button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">↑</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}    
+</script>   
+
+
+
+    <div id="loader" style="height: 100px; width: 100px; border-radius: 50%; visibility: hidden;">
+        <img src="img/dreams1.gif" width="600px" height="400px">
+    </div>    
+<!--beginning of navigation section-->
+<header class="nav-down">
+<div class="nav-container">
+<div class="brand"><img src="img/logo.png" width="105" height="105" alt="A look at Calpolysleeps"></div>
+<!--<img src="img/1.jpg" width="400.518" height="105" alt="Sleepy Snaps">-->
+<nav>
+<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+        <li>
+          <a href="#home">About</a>
+        </li>
+	  	<li>
+          <a href="#tl">First Encounters</a>
+        </li>
+        <li>
+          <a href="#vid">Being Caught</a>
+			</li>
+      <li>
+          <a href="#gal">Those Awake</a>
+		  </li>      
+      <li>
+          <a href="#num">(s)Napping Spots</a>
+			</li>
+      </ul>
+</nav>
+</div>
+<!--closing navigation tag-->
+</header>
+<!--end of navigation section-->
+    
+<!--main image-->
+<div class="container">
+
+    </div>
+<div class="cv">
+<ul class="fly-in-text">
+  <li>C</li>
+  <li>A</li>
+  <li>L</li>
+  <li>P</li>
+  <li>O</li>
+  <li>L</li>
+  <li>Y</li>
+    <br>
+  <li>S</li>
+  <li>L</li>
+  <li>E</li>
+  <li>E</li>
+  <li>P</li>
+  <li>S</li>
+ 
+</ul>
+    </div>
+    <!--animated welcome-->
+
+<div class="wrapper">
+<!--animated welcome code here-->
+
+<script>   
+    $(document).ready(function() {
+
+  setTimeout(function() {
+    $('.fly-in-text').removeClass('hidden');
+  }, 500);
+
+});
+</script>    
+</div>
+    
+<!--beginning of main content area-->
+<div class="row backness">
+<h2 id="home">We see you when you're sleeping, we know you're not awake.</h2>
+<article>
+<p class="tab"> <br><br>Thanks to the @Calpolysleeps Instagram account, Cal Poly students can share and laugh at funny pictures of their fellow students falling asleep on campus. By directly messaging the anonymous account holder, any Cal Poly student can try to make a napping student or faculty member become the next post or Insta story on @Calpolysleeps.</p>
+<p class="tab"><a href="#tl">First encounters</a></p>
+</article>
+</div>
+    
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/px2.png">
+</div>
+<!--end of parallax image-->
+	
+
+	
+<!--beginning of audio section-->
+<div class="row videoness">
+<h2 id="tl">Ever Heard of Calpolysleeps?</h2>
+<article>
+  <p class="tab">Click on images to hear how some student's first heard of Calpolysleeps ...<br>(Double-click to pause)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_e">
+    <source src="audio/e.mp3" type="audio/mpeg">
+</audio>        
+<audio id="audio_k">
+    <source src="audio/k.mp3" type="audio/mpeg">
+</audio>        
+<audio id="audio_m">
+	<source src="audio/m.mp3" type="audio/mpeg">
+</audio>
+
+<img src="img/rollover/m.gif" class="rollover" alt="description" onmouseover="this.src='img/rollover/m.gif'" onmouseout="this.src='img/rollover/m.jpg'" onclick="document.getElementById('audio_m').play(); return false;" ondblclick="document.getElementById('audio_m').pause(); return false;">
+/&gt;
+        
+<img src="img/rollover/e.jpg" class="rollover" alt="description" onmouseover="this.src='img/rollover/e.gif'" onmouseout="this.src='img/rollover/e.jpg'" onclick="document.getElementById('audio_e').play(); return false;" ondblclick="document.getElementById('audio_e').pause(); return false;">
+ /&gt; 
+    
+<img src="img/rollover/k.gif" class="rollover" alt="description" onmouseover="this.src='img/rollover/k.gif'" onmouseout="this.src='img/rollover/k.jpg'" onclick="document.getElementById('audio_k').play(); return false;" ondblclick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;        
+
+	</div>
+</div>
+<p class="tab"><a href="#vid">Being Caught</a></p>		
+</article>
+</div>
+<!--end of audio section-->
+
+            
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/pxlay2.2.jpg">
+</div>
+<!--end of parallax image-->
+
+    
+<!--beginning of video section-->
+<div class="row frontness">
+<h1 id="vid">Sleeping on the Job</h1>
+<article>
+<p class="tab">Students laugh at the many posts on Instagram. But what can happen if it's you the gram?<br> <br></p>	
+    <video width="100%" height="100%" poster="img/pxpp3.png" controls="">
+         <source src="img/@Calpolysleeps.mp4" type="video/mp4">
+Your browser does not support the video tag.
+    </video>
+<p class="tab"><a href="#gal">Those Awake</a></p>
+</article>
+    </div>
+<!--end of video section-->
+    
+
+    
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/mpx2.jpg">
+</div>
+<!--end of parallax image-->
+    
+
+<!--beginning of slideshow section-->
+<div class="row videoness"><!--beginning of row-->
+<h2 id="gal">those Awake</h2>
+<article><!--beginning of article-->
+<p class="tab">Here is how two students get their sleepy peers on @calpolysleeps, from picture to post. </p>
+<!--beginning of slideshow-->
+<div id="slider" data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="200" class="" style="overflow: hidden;"><img src="pe/1.jpg" width="100%" height="100%" alt="SAN LUIS OBISPO- February 7th, 2020: In order to get new content to post on the Calpolysleeps Instagram account, the anonymous account holder scrolls through their direct messages, a common practice the current holder has done daily for two years. No longer posting original pictures like the owner of the account, created in 2013, the current owner depends on its 8,300 followers for its sleepy content." class="cycle-slide cycle-sentinel" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; visibility: hidden;">
+<div class="cycle-prev"></div>
+<div class="cycle-next"></div>  
+
+
+
+
+
+
+
+
+
+
+
+
+<img id="ssimg" src="pe/1.jpg" width="100%" height="100%" alt="SAN LUIS OBISPO- February 7th, 2020: In order to get new content to post on the Calpolysleeps Instagram account, the anonymous account holder scrolls through their direct messages, a common practice the current holder has done daily for two years. No longer posting original pictures like the owner of the account, created in 2013, the current owner depends on its 8,300 followers for its sleepy content." class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 90; opacity: 1; display: block; visibility: hidden;"><img id="ssimg" src="pe/2.jpg" width="100%" height="100%" alt="After getting her first picture shared on Calpolysleeps story during last year’s Week of Welcome, Makayla Diaz, a second year Liberal Studies Major, has kept trying to get more pictures posted by sending over 50 pictures of others sleeping. Tšɨłkukunɨtš Dorms- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 89; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/3.jpg" width="100%" height="100%" alt="Makayla finds a stranger sprawled out taking a break from their homework in the University Union while checking her favorite sites to catch people napping. Holding her laughter in, Makayla silently takes the picture and sneaks away hoping she has caught a picture that will be posted on to the main account. University Union- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 88; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/4.jpg" width="100%" height="100%" alt="In order to stay away from sending many pictures of strangers sleeping, which she admits feeling awkward about, Makayla has made a game of directly messaging pictures with her roommates, who are all also on board. Poly Canyon Apartments- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/5.jpg" width="100%" height="100%" alt="Left to right, Heather Bootzin, a second year Psychology major, Makayla, and Maddie Slous, a second year Liberal Studies major, share an digital picture album they add to when they catch each other napping in awkward positions around their Poly Canyon apartment. Poly Canyon Apartments- 2/7/2020" class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 1; display: block;"><img id="ssimg" src="pe/6.jpg" width="100%" height="100%" alt="Though all of them get shared onto the account story, Maddie feels like she is a good sport for being the one with the most appearances on the account, by being shared seven times on the story and appears on two of the official posts. Poly Canyon Apartments- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden;"><img id="ssimg" src="pe/7.99.png" width="100%" height="100%" alt="Maddie is known for being the original sleeper in what is now the roommates’ legacy, the “Fuzzy Barstool” series." class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden;"><img id="ssimg" src="pe/9.jpg" width="100%" height="100%" alt="Makala has also been shared on the account story a few times but claims to have been the most embarrassing picture after being posted when sleeping in the front row of a Statistics lecture. Tšɨłkukunɨtš Dorms- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 95; visibility: hidden;"><img id="ssimg" src="pe/8.jpg" width="100%" height="100%" alt="As a team member on the diving team, Kelsey Titterington finds it funny to take pictures of other tired athletes and friends she has caught sleeping during her first year as a Business major. Mott Gymnasium- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden;"><img id="ssimg" src="pe/10.jpg" width="100%" height="100%" alt="After long and tiring practices, Kelsey shares that if it weren't for the comfortable lounges in the Mott gymnasium, her only posts would be of unsuspecting nappers in her classes. Mott Gymnasium- 2/7/2020
+" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 93; visibility: hidden;"><img id="ssimg" src="pe/11.jpg" width="100%" height="100%" alt="Kelsey has currently gotten all of her sent pictures posted on to the Calpolysleeps story, a feat she blames on athletes being tasked with “homework and practices make them knock out where ever.” Recreation Center- 2/7/2020
+" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 92; visibility: hidden;"><img id="ssimg" src="pe/12.jpg" width="100%" height="100%" alt="Even though she shares pictures of others sleeping, Kelsey checks in with the account holder that if she were ever posted on the account, that she would be able to ask them to remove the picture because she doesn’t want her friends to ever catch her napping. Mott Gymnasium- 2/7/2020
+" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 91; visibility: hidden;"></div><!--end of slideshow-->
+    
+<!--beginning of slideshow caption-->
+<div id="alt-caption" class="center">Left to right, Heather Bootzin, a second year Psychology major, Makayla, and Maddie Slous, a second year Liberal Studies major, share an digital picture album they add to when they catch each other napping in awkward positions around their Poly Canyon apartment. Poly Canyon Apartments- 2/7/2020</div><!--end of slideshow caption-->
+<p class="tab"><a href="#num">(s)Napping Spots</a></p>
+</article><!--end of article-->
+</div><!--end of row-->
+<!--end of slideshow section-->
+
+
+
+<!--beginning of infographic section-->
+<div class="row backness">
+<h2 id="num">(s)napping Spots</h2>
+<article>
+<p class="tab"></p>
+<!--infographic embed code here-->
+   <iframe src="https://uploads.knightlab.com/storymapjs/d2fbedff7fa819c6c15227f85cd5a0f2/campus-through-the-view-of-calpolysleeps/index.html" frameborder="0" width="80%" height="700"></iframe>
+</article>
+</div>
+<!--end of infographic section-->
+	
+<!--beginning of footer-->
+<footer>Sleepy Snaps | San Luis Obispo, CA | <a href="mailto: balvar10@calpoly.edu?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2020 | Site by B. Alvarado 
+</footer>
+<!--end of footer-->
+	
+
+	
+
+    
+    
+    <script>
+	(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+	<script>
+	var headertext = [];
+var headers = document.querySelectorAll("#miyazaki th"),
+tablerows = document.querySelectorAll("#miyazaki th"),
+tablebody = document.querySelector("#miyazaki tbody");
+for(var i = 0; i < headers.length; i++) {
+	var current = headers[i];
+	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+}
+for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	for (var j = 0, col; col = row.cells[j]; j++) {
+		col.setAttribute("data-th", headertext[j]);
+	}
+}
+</script>
+	
+	<!----Prevents audio tracks from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
+    
+    
+<script>
+    //<!--this is for the loader, loading, dreamer, dream -->
+      var loader = document.getElementById("loader");
+        
+        window.addEventListener("load",function(){
+            
+            loader.style.height="100px";
+            
+            loader.style.width="100px";
+            
+            loader.style.borderRadius= "50%";
+            
+            loader.style.visibility="hidden";
+            
+        })
+</script>
+ 
+
+
+</body><!--the following script controls the responsive navigation--></html>
