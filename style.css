@@ -246,11 +246,17 @@ a.text:hover, a.text:active {
 
 /*----------------Main Image-----------------*/
 
-img {
-    max-width: 60%;
-    height: auto;
-    background-size:cover;
+
+.image1 {
+	width: 100%;
 }
+
+.container {
+	position: relative;
+    background-image: url(img/pxtf1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
 
 /*----------------Main Content Area(this is where all the content below the navigation bar will go)--*/
 .row {
@@ -422,7 +428,7 @@ footer a:hover {
 .table {
 	position: relative;
 	text-align: center;
-	color: #AFE1AF;
+	color: #eb3660;
 	font-size: 0vw;
     
 }
