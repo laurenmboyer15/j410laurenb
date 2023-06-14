@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html><head>
+<!doctype html>
+
+<html>
 	
+<head>
+    
 <!--The following displays language used in browser to interpret page -->
 <meta charset="UTF-8">
 
 <!--The following line of code displays the page title on a browser tab -->
-<title>Horticulture Unit | Main Page</title>
+<title>Poly Plants| Home</title>
 
 <!--link tags are for linking to external files, in this case your CSS stylesheet-->
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -21,32 +24,13 @@
 
 <!--The following code links to the javascript file that runs the slideshow -->	
 <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
-
-<!--this is for the loader, loading, dreamer, dream  
-    <script type="text/javascript">
-        var loader = document.getElementById("loader");
-        
-        window.addEventListener("load",function(){
-            
-            loader.style.height="100px";
-            
-            loader.style.width="100px";
-            
-            loader.style.borderRadius= "50%";
-            
-            loader.style.visibility="hidden";
-            
-        })
-    </script>
-    -->	
     
 <!--The following code links to the javascript file that runs the parallax image -->    
 <script src="js/parallax.min.js"></script>
-    
+	
 <!--The following code links to Google Fonts-->
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Raleway|Roboto&amp;display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	
 <!--The following javscript runs the jquery slideshow -->
 <script type="text/javascript">
@@ -74,7 +58,7 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
+
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
@@ -96,17 +80,17 @@ function hasScrolled() {
 </script>
     
 <!--Favicon - images are in a folder called 'fav'-->
-<link rel="apple-touch-icon" sizes="180x180" href="img/fav/fav-192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/fav/fav-31.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/fav/fav-16.png">
-<link rel="manifest" href="img/fav/site.webmanifest">
-<link rel="mask-icon" href="img/fav/fav-512.png" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <!--End Favicon-->
     
 <!--back to top button-->
-</head><body><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 782.188px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/mpx2.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -91px; height: 712px; width: 1068px; max-width: none; top: -749.75px;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 782px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/pxlay2.2.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -265px; height: 712px; width: 1415px; max-width: none; top: -631.6px;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 736px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 405px; width: 885px;"><img class="parallax-slider" src="img/px2.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -91px; height: 712px; width: 1068px; max-width: none; top: -712.8px;"></div><button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">↑</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <script>
 window.onscroll = function() {scrollFunction()};
 
@@ -123,36 +107,32 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }    
-</script>   
+</script>     
+</head>
 
-
-
-    <div id="loader" style="height: 100px; width: 100px; border-radius: 50%; visibility: hidden;">
-        <img src="img/dreams1.gif" width="600px" height="400px">
-    </div>    
+<body>
 <!--beginning of navigation section-->
-<header class="nav-down">
+<header>
 <div class="nav-container">
-<div class="brand"><img src="img/logo.png" width="105" height="105" alt="A look at Calpolysleeps"></div>
-<!--<img src="img/1.jpg" width="400.518" height="105" alt="Sleepy Snaps">-->
+<div class="brand"><img src="logo.jpg%20.png" width="80" height="80" alt=""/></div>
 <nav>
 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
   <ul class="nav-list">
         <li>
-          <a href="#home">About</a>
+          <a href="#home">Poly Plants</a>
         </li>
+	   <li>
+          <a href="#gal">Horticulture Unit</a>
+		  </li>
 	  	<li>
-          <a href="#tl">First Encounters</a>
+          <a href="#tl">Employees</a>
         </li>
-        <li>
-          <a href="#vid">Being Caught</a>
-			</li>
-      <li>
-          <a href="#gal">Those Awake</a>
-		  </li>      
-      <li>
-          <a href="#num">(s)Napping Spots</a>
-			</li>
+       <li>
+          <a href="#vid">AI Tour</a>
+        </li>
+       <li>
+          <a href="#num">Price Comparisons</a>
+        </li>
       </ul>
 </nav>
 </div>
@@ -161,179 +141,266 @@ function topFunction() {
 <!--end of navigation section-->
     
 <!--main image-->
-<div class="container">
-
-    </div>
-<div class="cv">
-<ul class="fly-in-text">
-  <li>C</li>
-  <li>A</li>
-  <li>L</li>
-  <li>P</li>
-  <li>O</li>
-  <li>L</li>
-  <li>Y</li>
-    <br>
-  <li>S</li>
-  <li>L</li>
-  <li>E</li>
-  <li>E</li>
-  <li>P</li>
-  <li>S</li>
- 
-</ul>
-    </div>
-    <!--animated welcome-->
-
+<img src="Screen%20Shot%202023-06-12%20at%202.38.27%20PM.png" alt="Animation">
+<!--animated welcome-->
 <div class="wrapper">
 <!--animated welcome code here-->
-
-<script>   
-    $(document).ready(function() {
-
-  setTimeout(function() {
-    $('.fly-in-text').removeClass('hidden');
-  }, 500);
-
-});
-</script>    
 </div>
+    
+    
     
 <!--beginning of main content area-->
-<div class="row backness">
-<h2 id="home">We see you when you're sleeping, we know you're not awake.</h2>
+<div class="row whiteBG">
+<h2 id="home">Poly Plants</h2>
 <article>
-<p class="tab"> <br><br>Thanks to the @Calpolysleeps Instagram account, Cal Poly students can share and laugh at funny pictures of their fellow students falling asleep on campus. By directly messaging the anonymous account holder, any Cal Poly student can try to make a napping student or faculty member become the next post or Insta story on @Calpolysleeps.</p>
-<p class="tab"><a href="#tl">First encounters</a></p>
+<p class="tab">The Plant Shop offers students the opportunity to work in a retail environment to get hands-on experience in all aspects of garden center management and operation. True to the spirit of Cal Poly, it is a "Learn By Doing" full service plant shop. The Environmental Horticulture Unit includes a student-operated commercial greenhouse range and nursery in which students carry on a project program involving wholesale and retail sales and the student-operated Poly Plant Shop. Also included are 35,000 square feet of greenhouses, a 5,000 square-foot retractable roof greenhouse, 7,500 square feet of shade houses; and a 4-acre arboretum. <br></p>
+<p class="tab"><a href="#gal">Horticulture unit</a></p>
 </article>
 </div>
-    
 <!--beginning of parallax image-->
-<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/px2.png">
+    
+    <!--PARALLAX IMAGE-->
+ <div class="parallax-3" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/poly-flowers.jpg">
 </div>
+    
+    
 <!--end of parallax image-->
-	
-
-	
-<!--beginning of audio section-->
-<div class="row videoness">
-<h2 id="tl">Ever Heard of Calpolysleeps?</h2>
-<article>
-  <p class="tab">Click on images to hear how some student's first heard of Calpolysleeps ...<br>(Double-click to pause)</p>
-  <div class="table">
-	<div id="trip">
-<audio id="audio_e">
-    <source src="audio/e.mp3" type="audio/mpeg">
-</audio>        
-<audio id="audio_k">
-    <source src="audio/k.mp3" type="audio/mpeg">
-</audio>        
-<audio id="audio_m">
-	<source src="audio/m.mp3" type="audio/mpeg">
-</audio>
-
-<img src="img/rollover/m.gif" class="rollover" alt="description" onmouseover="this.src='img/rollover/m.gif'" onmouseout="this.src='img/rollover/m.jpg'" onclick="document.getElementById('audio_m').play(); return false;" ondblclick="document.getElementById('audio_m').pause(); return false;">
-/&gt;
-        
-<img src="img/rollover/e.jpg" class="rollover" alt="description" onmouseover="this.src='img/rollover/e.gif'" onmouseout="this.src='img/rollover/e.jpg'" onclick="document.getElementById('audio_e').play(); return false;" ondblclick="document.getElementById('audio_e').pause(); return false;">
- /&gt; 
-    
-<img src="img/rollover/k.gif" class="rollover" alt="description" onmouseover="this.src='img/rollover/k.gif'" onmouseout="this.src='img/rollover/k.jpg'" onclick="document.getElementById('audio_k').play(); return false;" ondblclick="document.getElementById('audio_2').pause(); return false;">
- /&gt;        
-
-	</div>
-</div>
-<p class="tab"><a href="#vid">Being Caught</a></p>		
-</article>
-</div>
-<!--end of audio section-->
-
-            
-<!--beginning of parallax image-->
-<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/pxlay2.2.jpg">
-</div>
-<!--end of parallax image-->
-
-    
-<!--beginning of video section-->
-<div class="row frontness">
-<h1 id="vid">Sleeping on the Job</h1>
-<article>
-<p class="tab">Students laugh at the many posts on Instagram. But what can happen if it's you the gram?<br> <br></p>	
-    <video width="100%" height="100%" poster="img/pxpp3.png" controls="">
-         <source src="img/@Calpolysleeps.mp4" type="video/mp4">
-Your browser does not support the video tag.
-    </video>
-<p class="tab"><a href="#gal">Those Awake</a></p>
-</article>
-    </div>
-<!--end of video section-->
-    
-
-    
-<!--beginning of parallax image-->
-<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosfix="true" data-image-src="img/mpx2.jpg">
-</div>
-<!--end of parallax image-->
-    
-
 <!--beginning of slideshow section-->
-<div class="row videoness"><!--beginning of row-->
-<h2 id="gal">those Awake</h2>
+<div class="row blueBG"><!--beginning of row-->
+<h2 id="gal">Alison's tour of Horticulture Unit</h2>
+    <button onclick="myFunction()">Hort Unit</button>
+
 <article><!--beginning of article-->
-<p class="tab">Here is how two students get their sleepy peers on @calpolysleeps, from picture to post. </p>
-<!--beginning of slideshow-->
-<div id="slider" data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="200" class="" style="overflow: hidden;"><img src="pe/1.jpg" width="100%" height="100%" alt="SAN LUIS OBISPO- February 7th, 2020: In order to get new content to post on the Calpolysleeps Instagram account, the anonymous account holder scrolls through their direct messages, a common practice the current holder has done daily for two years. No longer posting original pictures like the owner of the account, created in 2013, the current owner depends on its 8,300 followers for its sleepy content." class="cycle-slide cycle-sentinel" style="position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; display: block; visibility: hidden;">
+<p class="tab">Alison is a student employee in the Horticulture Unit, helping with harvest.</p>
+<div id="slider"
+data-cycle-caption="#alt-caption"
+data-cycle-caption-template="{{alt}}"
+data-cycle-fx="scrollHorz"
+data-cycle-pause-on-hover="true"
+data-cycle-speed="200">
 <div class="cycle-prev"></div>
-<div class="cycle-next"></div>  
+<div class="cycle-next"></div>
 
+<div class="slideshow-container">
 
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="img/1.jpg" style="width:100%">
+  <div class="text">The entrance to the Horticulture Unit is located at the end of Via Carta, past the baseball fields and opposite the Oppenheimer Family Equine Center</div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="img/2.jpg" style="width:100%">
+  <div class="text">Alison Snyder is a biology senior with a minor in soil science. She has worked at the Horticulture Unit for more than a year and her favorite building is this one, the Foliage Production House. </div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="img/3.jpg" style="width:100%">
+  <div class="text">Outside of her job, Snyder has a large plant collection of her — over 20 plants. She will get a lot from her coworkers.</div>
+</div>    
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="img/4.jpg" style="width:100%">
+  <div class="text">The succulent house stores all of the mother plants, which assistants cut and pot to be sold. WHen they're in bloom, Snyder says they can sometimes get beautiful flowers. Snyder had also just watered all the roses, but they are not flowering yet.</div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="img/5.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="img/6.jpg" style="width:100%">
+  <div class="text">Cal Poly has integrated the three separate degree programs of crop science, fruit science and environmental horticultural science into a combined plant sciences major that will allow you to specialize in one of three concentrations students select during their freshman year: environmental horticultural science, fruit and crop science or plant protection science.</div>
+ </div>  
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="img/7.jpg" style="width:60%">
+  <div class="text"> Industrial-grade machine used to break up the soil the horticulture unit uses. </div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="img/8.jpg" style="width:100%">
+  <div class="text">Putting a whole bag of soil in here breaks it up quickly.</div>
+</div>
 
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="img/9.jpg" style="width:100%">
+  <div class="text">A lot of research is done at the unit, as it also functions as classroom space. This is a test to see how plans grow under different hues of light. Snyder says the results have not been finalized yet. It was 90 degrees in the room.</div>
+</div>   
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="img/10.jpg" style="width:60%">
+  <div class="text">Caption Three</div>
+</div>
 
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
 
+</div>
+<br>
 
+</div>
 
-<img id="ssimg" src="pe/1.jpg" width="100%" height="100%" alt="SAN LUIS OBISPO- February 7th, 2020: In order to get new content to post on the Calpolysleeps Instagram account, the anonymous account holder scrolls through their direct messages, a common practice the current holder has done daily for two years. No longer posting original pictures like the owner of the account, created in 2013, the current owner depends on its 8,300 followers for its sleepy content." class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 90; opacity: 1; display: block; visibility: hidden;"><img id="ssimg" src="pe/2.jpg" width="100%" height="100%" alt="After getting her first picture shared on Calpolysleeps story during last year’s Week of Welcome, Makayla Diaz, a second year Liberal Studies Major, has kept trying to get more pictures posted by sending over 50 pictures of others sleeping. Tšɨłkukunɨtš Dorms- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 89; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/3.jpg" width="100%" height="100%" alt="Makayla finds a stranger sprawled out taking a break from their homework in the University Union while checking her favorite sites to catch people napping. Holding her laughter in, Makayla silently takes the picture and sneaks away hoping she has caught a picture that will be posted on to the main account. University Union- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 88; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/4.jpg" width="100%" height="100%" alt="In order to stay away from sending many pictures of strangers sleeping, which she admits feeling awkward about, Makayla has made a game of directly messaging pictures with her roommates, who are all also on board. Poly Canyon Apartments- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden; opacity: 1; display: block;"><img id="ssimg" src="pe/5.jpg" width="100%" height="100%" alt="Left to right, Heather Bootzin, a second year Psychology major, Makayla, and Maddie Slous, a second year Liberal Studies major, share an digital picture album they add to when they catch each other napping in awkward positions around their Poly Canyon apartment. Poly Canyon Apartments- 2/7/2020" class="cycle-slide cycle-slide-active" style="position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 1; display: block;"><img id="ssimg" src="pe/6.jpg" width="100%" height="100%" alt="Though all of them get shared onto the account story, Maddie feels like she is a good sport for being the one with the most appearances on the account, by being shared seven times on the story and appears on two of the official posts. Poly Canyon Apartments- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden;"><img id="ssimg" src="pe/7.99.png" width="100%" height="100%" alt="Maddie is known for being the original sleeper in what is now the roommates’ legacy, the “Fuzzy Barstool” series." class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden;"><img id="ssimg" src="pe/9.jpg" width="100%" height="100%" alt="Makala has also been shared on the account story a few times but claims to have been the most embarrassing picture after being posted when sleeping in the front row of a Statistics lecture. Tšɨłkukunɨtš Dorms- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 95; visibility: hidden;"><img id="ssimg" src="pe/8.jpg" width="100%" height="100%" alt="As a team member on the diving team, Kelsey Titterington finds it funny to take pictures of other tired athletes and friends she has caught sleeping during her first year as a Business major. Mott Gymnasium- 2/7/2020" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden;"><img id="ssimg" src="pe/10.jpg" width="100%" height="100%" alt="After long and tiring practices, Kelsey shares that if it weren't for the comfortable lounges in the Mott gymnasium, her only posts would be of unsuspecting nappers in her classes. Mott Gymnasium- 2/7/2020
-" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 93; visibility: hidden;"><img id="ssimg" src="pe/11.jpg" width="100%" height="100%" alt="Kelsey has currently gotten all of her sent pictures posted on to the Calpolysleeps story, a feat she blames on athletes being tasked with “homework and practices make them knock out where ever.” Recreation Center- 2/7/2020
-" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 92; visibility: hidden;"><img id="ssimg" src="pe/12.jpg" width="100%" height="100%" alt="Even though she shares pictures of others sleeping, Kelsey checks in with the account holder that if she were ever posted on the account, that she would be able to ask them to remove the picture because she doesn’t want her friends to ever catch her napping. Mott Gymnasium- 2/7/2020
-" class="cycle-slide" style="position: absolute; top: 0px; left: 0px; z-index: 91; visibility: hidden;"></div><!--end of slideshow-->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!--end of slideshow-->
     
 <!--beginning of slideshow caption-->
-<div id="alt-caption" class="center">Left to right, Heather Bootzin, a second year Psychology major, Makayla, and Maddie Slous, a second year Liberal Studies major, share an digital picture album they add to when they catch each other napping in awkward positions around their Poly Canyon apartment. Poly Canyon Apartments- 2/7/2020</div><!--end of slideshow caption-->
-<p class="tab"><a href="#num">(s)Napping Spots</a></p>
+<div id="alt-caption" class="center">
+</div><!--end of slideshow caption-->
+<p class="tab"><a href="#tl">Potential of Tech in SLO</a></p>
 </article><!--end of article-->
 </div><!--end of row-->
 <!--end of slideshow section-->
-
-
-
-<!--beginning of infographic section-->
-<div class="row backness">
-<h2 id="num">(s)napping Spots</h2>
+<!--PARALLAX IMAGE-->
+    <div class="parallax-2" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/arboretum.jpg">
+    </div>
+<!--end of parallax image-->
+<!--beginning of audio section-->
+<div class="row whiteBG">
+<h2 id="tl">What is your favorite part of your job?</h2>
 <article>
-<p class="tab"></p>
-<!--infographic embed code here-->
-   <iframe src="https://uploads.knightlab.com/storymapjs/d2fbedff7fa819c6c15227f85cd5a0f2/campus-through-the-view-of-calpolysleeps/index.html" frameborder="0" width="80%" height="700"></iframe>
+  <p class="tab">Click on images to hear what these Cal Poly students had to say...<br>(Double-click to pause audio)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_1">
+    <source src="audio/claire-audio.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_2">
+    <source src="audio/alison-audio.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_3">
+	<source src="audio/sarah-audio.mp3" type="audio/mpeg" />
+</audio>
+        
+<img src="img/rollover/claire.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/claire.jpg'" onMouseOut="this.src='img/rollover/claire.gif'" onClick="document.getElementById('audio_1').play(); return false;" onDblClick="document.getElementById('audio_1').pause(); return false;">
+ /&gt; 
+            
+<img src="img/rollover/alison.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/alison.jpg'" onMouseOut="this.src='img/rollover/alison.gif'" onClick="document.getElementById('audio_2').play(); return false;" onDblClick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;
+            
+<img src="img/rollover/sarah.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/sarah.jpg'" onMouseOut="this.src='img/rollover/sarah.gif'" onClick="document.getElementById('audio_3').play(); return false;" onDblClick="document.getElementById('audio_3').pause(); return false;">
+/&gt;
+	</div>
+</div>
+<p class="tab"><a href="#vid">AI Tour</a></p>		
 </article>
 </div>
-<!--end of infographic section-->
-	
+<!--end of audio section-->
+    
+<!--beginning of parallax image-->
+<div class="parallax-4" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/gazebo.jpg">
+</div>
+<!--end of parallax image-->
+
+<!--beginning of video section-->
+<div class="row orangeBG">
+<h2 id="vid">AI Tour</h2>
+<article>
+<p class="tab">Tour of the Horticulture Unit done by AI Sir David Attenborough</p>	
+<video width="100%" height="100%" poster="img/poster.png" controls>
+<source src="IMG_7742.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="tab"><a href="#num">Price Comparisons</a></p>
+</article>
+</div>
+<!--end of video section-->
+<!--beginning of parallax image-->
+<div class="image-wrapper">
+<img src="img/infographic.png" alt="">
+<span>The original name of the house was Artede</span>
+</div>
+<!--end of parallax image-->
+    <script>
+    <!-- this script got from www.javascriptfreecode.com coded by: Krishna Eydat-->
+<SCRIPT language=JavaScript>
+var NS4 = (document.layers);    
+var IE4 = (document.all);
+var win = window;    
+var n   = 0;
+function findInPage(str) {
+  var txt, i, found;
+  if (str == "")
+    return false;
+  if (NS4) {
+    if (!win.find(str))
+      while(win.find(str, false, true))
+        n++;
+    else
+      n++;
+    if (n == 0)
+      alert("Not found.");
+  }
+  if (IE4) {
+    txt = win.document.body.createTextRange();
+    for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
+      txt.moveStart("character", 1);
+      txt.moveEnd("textedit");
+    }
+    if (found) {
+      txt.moveStart("character", -1);
+      txt.findText(str);
+      txt.select();
+      txt.scrollIntoView();
+      n++;
+    }
+    else {
+      if (n > 0) {
+        n = 0;
+        findInPage(str);
+      }
+      else
+        alert("Sorry, we couldn't find.Try again");
+   }
+  }
+  return false;
+}
+</script>
+
 <!--beginning of footer-->
-<footer>Sleepy Snaps | San Luis Obispo, CA | <a href="mailto: balvar10@calpoly.edu?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2020 | Site by B. Alvarado 
+<footer>Poly Plants | San Luis Obispo, CA | <a href="mailto: lmboyer@calpoly.edu?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2023 | Site by Lauren Boyer
 </footer>
 <!--end of footer-->
 	
-
+</body>
 	
-
-    
-    
-    <script>
+<!--the following script controls the responsive navigation-->
+<script>
 	(function($) { // Begin jQuery
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
@@ -358,6 +425,7 @@ Your browser does not support the video tag.
   }); // end DOM ready
 })(jQuery); // end jQuery
 	</script>
+    
 	<script>
 	var headertext = [];
 var headers = document.querySelectorAll("#miyazaki th"),
@@ -385,25 +453,5 @@ document.addEventListener('play', function(e){
     }
 }, true);
     </script>
-    
-    
-<script>
-    //<!--this is for the loader, loading, dreamer, dream -->
-      var loader = document.getElementById("loader");
-        
-        window.addEventListener("load",function(){
-            
-            loader.style.height="100px";
-            
-            loader.style.width="100px";
-            
-            loader.style.borderRadius= "50%";
-            
-            loader.style.visibility="hidden";
-            
-        })
-</script>
- 
 
-
-</body><!--the following script controls the responsive navigation--></html>
+</html>
