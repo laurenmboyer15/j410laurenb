@@ -247,7 +247,7 @@ a.text:hover, a.text:active {
 /*----------------Main Image-----------------*/
 
 img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     background-size:cover;
 }
